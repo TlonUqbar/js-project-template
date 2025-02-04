@@ -1,10 +1,35 @@
 # 🚀 Welcome to your new awesome project!
 
-This is a javascript started template repo.
+This is a javascript template repo.
 At the moment this is pretty bare bones.
 I've only configured prettier, eslint, webpack, and gp-pages.
 
 
+## Some House Keeping First.
+When you first clone this repo `node_modules` is missing you will need to run the following commands.  
+
+```bash
+npm install package.json
+npm audit fix
+```
+
+The first installs the missing node_modules.
+The second updates modules have known vulnerabilities.
+After that everything should be working, and you are ready to start your project.
+
+
+
+### Currently Configured
+  - prettier
+  - eslint
+  - webpack
+  - gh-pages
+  - .gitignore file
+  - vscode settings for prettier and eslint extensions
+  - more to come
+
+
+---
 
 ## Prettier
 
