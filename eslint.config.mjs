@@ -1,20 +1,26 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import eslintConfigPrettier from "eslint-config-prettier";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default [
-  {languageOptions: { globals: globals.browser }},
+  { languageOptions: { globals: globals.browser } },
   eslintConfigPrettier,
   pluginJs.configs.recommended,
   {
     rules: {
-        "no-unused-vars": "warn",
-        "no-undef": "warn",
-        "no-unused-expressions": "warn",
-        "semi": "warn"
+      'no-unused-vars': 'warn',
+      'no-undef': 'warn',
+      'no-unused-expressions': 'warn',
+      semi: 'warn',
     },
   },
   {
-    ignores: ["**/temp.js", "config/*", ".config/*", "package.json", "webpack.config.js"]
-  }
+    ignores: [
+      '**/temp.js',
+      'config/*',
+      '.config/*',
+      'package.json',
+      'webpack.config.js',
+    ],
+  },
 ];
